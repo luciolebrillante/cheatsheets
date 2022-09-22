@@ -1,2 +1,5 @@
-# To create a directory for a user with a group with permission 700
+# To create a directory for an user with a group with permission 700
 install -o <username> -g <groupname> -m 700 -d /home/<username>/<directoryname>
+
+# To copy a file into a directory
+install -o <username> -g <username> -m 660 -T /tmp/file /tmp/newfile
